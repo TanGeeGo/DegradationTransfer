@@ -6,47 +6,33 @@
 ```python
 python dataset_generator.py
 ```
-where the 
 
-### 2. Calibrate the environment illuminance
-
-* #### Download the [Android Debug Bridge (ADB)](https://source.android.com/setup/build/adb) to your laplop, and link your camera with your laptop.
-
-* #### Please ensure ADB is in the system parameters of your laptop.
-
-* #### Shooting the pure white scene by:
+Note that the path information in this file needs update to the path of your computer:
 
 ```python
-python data_capture.py -n 1 -t 1.5
+date_ind = "20220329" # date information for h5py file
+dataset_type = "valid" # type of dataset "train" or "valid"
+camera_idx = "camera04" # index of camera "camera01" to "camera05" 
+base_path = "/hdd4T_2/Aberration2021/synthetic_datasets" # system path 
+input_dir = "input_rgb_20220329" # input data dir
+label_dir = "label_rgb" # label data dir
+if_mask = False # whether add mask
+# split FoV for dataset generation
+# splited_fov = [0.0, 0.3, 0.6, 0.9, 1.0]
+splited_fov = [0.0, 1.0]
 ```
 
-* #### Pull the raw whiteboard image from camera to your laptop:
+### 2. Check the option file information
 
-```
-adb pull ~/DCIM/Camera/whiteboard.dng ~/whiteboard
-```
+* #### Checking the data path and other hyper-parameters for training   
 
-* #### Download the [dcraw](https://www.dechifro.org/dcraw/) and ensure dcraw is in the system parameters.
-
-* #### Postprocessing the captured whiteboard raw image with [dcraw](https://www.dechifro.org/dcraw/):
-
-```
-dcraw -v -4 -T -w -n 300 -q 3 -o 0 ~/whiteboard/whiteboard.dng
-```
-
-* #### Calibrate the environment illuminance:
+### 3. Training the FoV-KPN
 
 ```python
-python env_illuminance.py -i ~/whiteboard/whiteboard.tiff -o ~/env_illu.mat -p 100
+python train.py
 ```
 
-### 3. Checkerboard capture and postprocessing
-
-* #### Capture the checkerboard by:
-
-```python
-python data_capture.py -n 7 -t 1.5
-```
+### 4. Test on the actual photographs of your camera
 
 * #### Pull the raw image from camera to your laptop:
 
