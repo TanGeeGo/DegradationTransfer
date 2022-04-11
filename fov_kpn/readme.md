@@ -26,6 +26,8 @@ splited_fov = [0.0, 1.0]
 
 * #### Checking the data path and other hyper-parameters for training   
 
+Note: The training information and the test information are in the same option.py file!
+
 ### 3. Training the FoV-KPN
 
 ```python
@@ -34,16 +36,6 @@ python train.py
 
 ### 4. Test on the actual photographs of your camera
 
-* #### Pull the raw image from camera to your laptop:
-
-```
-adb pull -r ~/DCIM/Camera/*.dng ~/rawdata
-```
-
-* #### Postprocessing the captured raw images by:
-
 ```python
-python post_processing.py -i ~/rawdata -n 7 -e ~/env_illu.mat -d 1.0
+python test_real.py
 ```
-
-The 16-bit image is saved in the same directory of rawdata, named with "*_out.tiff"
