@@ -27,4 +27,20 @@ python kernel_sort.py -d ~/ -o ~/kernel/
 python data_generator.py
 ```
 
-Note: the image path in the "data_generator.py" needs to be changed, such as the label image path, the output image path, and the PSFs path.
+Note that the image path in the "data_generator.py" needs to be changed, such as the label image path, the output image path, and the PSFs path:
+
+```python
+# input image path
+# label8bit_dir = '~/train_datasets/label_8bit'
+label8bit_dir = '~/valid_datasets/label_8bit'
+# label raw path
+# labelraw_dir = '~/train_datasets/label_rgb'
+labelraw_dir = '~/valid_datasets/label_rgb'
+create_dir(labelraw_dir)
+# output image path
+# inputraw_dir = '~/train_datasets/input_rgb'
+inputraw_dir = '~/valid_datasets/input_rgb'
+create_dir(inputraw_dir)
+# kernel path
+kernel_path = '~/kernel/kernel.mat'
+```
