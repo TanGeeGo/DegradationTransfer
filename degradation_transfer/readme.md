@@ -11,6 +11,10 @@
 
 * #### The options for different FoV can be modified, we recommand you change the option according to the performance of this FoV.
 
+* #### The training split the FoV into 4 regions and the white balance of this checkerboard is needed for unprocess.
+
+* #### We recommend you separately train the model for higher efficiency.
+
 ### 2. The predicted PSFs are saved by training, collect the test PSFs of each FoV.
 
 ```python
