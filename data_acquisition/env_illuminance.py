@@ -1,15 +1,26 @@
 import os
 import time
+import argparse
 import tifffile
 import scipy.io
 import scipy.interpolate
 import numpy as np
 
 """
-    environment illuminance calibration
+Environment illuminance calibration
+
+Run this demo by this command:
+python env_illuminance.py -i ~/whiteboard.tiff -o ~/env_illu.mat -p 100
 """
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-i", "--whiteboard_path", type=str, help="Path of the captured white board.")
+parser.add_argument("-o", "--output_path", type=str, help="Path of the output environment illuminance matrix.")
+parser.add_argument("-p", "--patch_size", type=str, help="Patch size of pixel for caliberate environment illuminance. It is used for eliminate the influence of noise")
+args = parser.parse_args()
+
 # load the white board image after post processing 
-image_path = "~/whiteboard.tiff"
+image_path = args.whiteboard_path
 image = tifffile.imread(image_path)
 # calculate averange pixel value per channel
 mean_r = np.mean(image[:, :, 0])
@@ -49,4 +60,4 @@ ratio_b = f_illu_ratio_b(w_pixel_range, h_pixel_range)
 ratio = np.stack((ratio_r, ratio_g, ratio_b), axis=2)
 
 # save the ratio in mat file
-scipy.io.savemat('~/env_illu.mat', {"ratio": ratio})
+scipy.io.savemat(args.output_path, {"ratio": ratio})
