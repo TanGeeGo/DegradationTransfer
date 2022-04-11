@@ -141,11 +141,11 @@ if __name__ == "__main__":
     labelraw_dir = '~/valid_datasets/label_rgb'
     create_dir(labelraw_dir)
     # output image path
-    # inputraw_dir = '~/train_datasets/input_rgb_20220325'
-    inputraw_dir = '~/valid_datasets/input_rgb_20220329'
+    # inputraw_dir = '~/train_datasets/input_rgb'
+    inputraw_dir = '~/valid_datasets/input_rgb'
     create_dir(inputraw_dir)
     # kernel path
-    kernel_path = '~/kernel/kernel_20220329.mat'
+    kernel_path = '~/kernel/kernel.mat'
     # interval of the patch, 10pixels
     patch_itv = 50
     # size of the patch, 100pixels
