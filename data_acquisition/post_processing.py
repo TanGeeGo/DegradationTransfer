@@ -8,6 +8,10 @@ import tifffile
 import numpy as np
 
 """
+Post processing the dng file to 16-bit tiff file
+Support the postprocessing for different camera's data
+
+Run this demo by this command:
 python post_processing.py -i ~/rawdata -n 7 -e ~/env_illu.mat -d 1.0
 """
 
@@ -82,3 +86,4 @@ for cam in cam_dict:
 
         # print image message
         print("*"*60 + "\n{} is processed\n".format(img_path[0].split("/")[-1]) + "*"*60)
+        
