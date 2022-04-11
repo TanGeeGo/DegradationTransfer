@@ -134,24 +134,22 @@ def conv(img_path, label_dir, input_dir, kernel_path, patch_itv, patch_size, wb,
 
 if __name__ == "__main__":
     # input image path
-    # label8bit_dir = '/hdd4T_2/Aberration2021/synthetic_datasets/camera03/train_datasets/label_8bit'
-    label8bit_dir = '/hdd4T_2/Aberration2021/synthetic_datasets/camera03/valid_datasets/label_8bit'
+    # label8bit_dir = '~/train_datasets/label_8bit'
+    label8bit_dir = '~/valid_datasets/label_8bit'
     # label raw path
-    # labelraw_dir = '/hdd4T_2/Aberration2021/synthetic_datasets/camera04/train_datasets/label_rgb'
-    labelraw_dir = '/hdd4T_2/Aberration2021/synthetic_datasets/camera04/valid_datasets/label_rgb'
+    # labelraw_dir = '~/train_datasets/label_rgb'
+    labelraw_dir = '~/valid_datasets/label_rgb'
     create_dir(labelraw_dir)
     # output image path
-    # inputraw_dir = '/hdd4T_2/Aberration2021/synthetic_datasets/camera04/train_datasets/input_rgb_20220325'
-    inputraw_dir = '/hdd4T_2/Aberration2021/synthetic_datasets/camera04/valid_datasets/input_rgb_20220329'
+    # inputraw_dir = '~/train_datasets/input_rgb_20220325'
+    inputraw_dir = '~/valid_datasets/input_rgb_20220329'
     create_dir(inputraw_dir)
     # kernel path
-    kernel_path = '/hdd4T_2/Aberration2021/checker/camera04/kernelpred/kernel/kernel_20220329.mat'
+    kernel_path = '~/kernel/kernel_20220329.mat'
     # interval of the patch, 10pixels
     patch_itv = 50
     # size of the patch, 100pixels
     patch_size = 150
-    # white balance of the input image
-    # wb = [2.237, 1.066, 1.911]
     # generate the image list
     img_list = sorted(glob.glob(label8bit_dir + '/*.png'))
 
