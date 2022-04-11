@@ -3,7 +3,10 @@
 
 ### 1. prepare the dataset of your camera by:
 
-
+```python
+python dataset_generator.py
+```
+where the 
 
 ### 2. Calibrate the environment illuminance
 
