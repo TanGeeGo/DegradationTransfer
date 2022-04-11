@@ -57,3 +57,5 @@ adb pull -r ~/DCIM/Camera/*.dng ~/rawdata
 ```python
 python post_processing.py -i ~/rawdata -n 7 -e ~/env_illu.mat -d 1.0
 ```
+
+The 16-bit image is saved in the same directory of rawdata, named with "*_out.tiff"
