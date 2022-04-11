@@ -20,3 +20,11 @@
 ```python
 python kernel_sort.py -d ~/ -o ~/kernel/
 ```
+
+### 3. Use the PSFs of different FoVs to generate data pairs.
+
+```python
+python data_generator.py
+```
+
+Note: the image path in the "data_generator.py" needs to be changed, such as the label image path, the output image path, and the PSFs path.
