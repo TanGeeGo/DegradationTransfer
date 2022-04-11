@@ -19,5 +19,7 @@
 * #### Pull the raw whiteboard image from camera to your laptop:
 
 
-![image]("https://github.com/TanGeeGo/DegradationTransfer/blob/main/backward_transfer/data/h_0300_w_0900_input.png")
-![image]("https://github.com/TanGeeGo/DegradationTransfer/blob/main/backward_transfer/data/h_0300_w_0900_label.png")
+![image](https://github.com/TanGeeGo/DegradationTransfer/blob/main/backward_transfer/data/h_0300_w_0900_input.png)
+![image](https://github.com/TanGeeGo/DegradationTransfer/blob/main/backward_transfer/data/h_0300_w_0900_label.png)
+
+* #### Left is the input patch of the deep-linear network and the model is supervised by the right patch
