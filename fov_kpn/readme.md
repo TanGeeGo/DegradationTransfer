@@ -1,6 +1,17 @@
 
 ## This is the official Pytorch implementation of FoV-KPN.
 
+### Prerequisite
+
+* #### The Deformable ConvNets V2 (DCNv2) module in our code adopts [Xujiarui's Implementation](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch/tree/pytorch_1.0.0). We recommand you recompile the code according to your machine and python environment as follows:
+
+```python
+cd ~/dcn
+python setup.py develop
+```
+
+This may cause many issues, please open Issues and ask me if you have any problems!
+
 ### 1. prepare the dataset of your camera by:
 
 ```python
