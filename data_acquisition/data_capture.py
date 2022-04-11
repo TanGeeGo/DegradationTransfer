@@ -6,6 +6,8 @@ import argparse
 Run this demo by this command:
 python data_capture.py -n 7 -t 1.5
 
+Here is some following small commands for android camera:
+
 open the camera with this command:
 adb shell am start -a android.media.action.STILL_IMAGE_CAMERA
 
