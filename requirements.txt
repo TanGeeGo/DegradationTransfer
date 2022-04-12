@@ -1,0 +1,15 @@
+cached-property==1.5.2
+certifi==2020.10.8
+h5py==3.6.0
+matplotlib==3.2.1
+numpy==1.21.5
+opencv-python==4.5.5.62
+Pillow==6.2.2
+scikit-image==0.16.2
+scipy==1.7.3
+six==1.16.0
+tifffile==2021.11.2
+tensorboardX==2.0
+torch==1.2.0+cu92
+torchvision==0.4.0+cu92
+
