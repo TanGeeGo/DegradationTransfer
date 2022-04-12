@@ -198,3 +198,16 @@ python train.py
 ```python
 python test_real.py
 ```
+
+## Citation
+If you find the code helpful in your research or work, please cite the following papers.
+```
+@InProceedings{Chen_2021_ICCV,
+    author    = {Chen, Shiqi and Feng, Huajun and Gao, Keming and Xu, Zhihai and Chen, Yueting},
+    title     = {Extreme-Quality Computational Imaging via Degradation Framework},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2021},
+    pages     = {2632-2641}
+}
+```
