@@ -1,5 +1,11 @@
-# DegradationTransfer
-## The source code of "*Extreme Image Quality Enhancement via Degradation Transfer*" is coming soon! 
-For more information, please contact chenshiqi@zju.edu.cn.
+# DegradationTransfer & FoV-KPN (ICCV, 2021)
+by Shiqi Chen, Keming Gao, Huajun Feng, Zhihai Xu, Yueting Chen
 
-## Thanks for your waiting! Today we are going to update the code. (20220411)
+This is the official Pytorch implementation of "**Extreme-Quality Computational Imaging via Degradation Framework**" [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/html/Chen_Extreme-Quality_Computational_Imaging_via_Degradation_Framework_ICCV_2021_paper.html)
+
+## Prerequisites
+* Python 3.6
+* Pytorch 1.1
+* CUDA 9.0
+
+
