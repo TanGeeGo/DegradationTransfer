@@ -3,6 +3,8 @@ by Shiqi Chen, Keming Gao, Huajun Feng, Zhihai Xu, Yueting Chen
 
 This is the official Pytorch implementation of "**Extreme-Quality Computational Imaging via Degradation Framework**" [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/html/Chen_Extreme-Quality_Computational_Imaging_via_Degradation_Framework_ICCV_2021_paper.html)
 
+*Due to some irresistible reasons on commercial, we cannot make the trained model and training data public. We are deeply sorry for this.*
+
 ## Prerequisites
 * Python 3.7
 * Matlab
